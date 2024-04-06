@@ -639,3 +639,118 @@ p {
 }
 
 
+
+
+/* Start statistics */
+.statistics {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    flex-flow: column nowrap;
+    padding: 50px 0;
+  }
+  
+  .statistics .category {
+    border-radius: 8px;
+  }
+  
+  .statistics .category-title {
+    font-size: 24px;
+    color: var(--navbar-bg-color);
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+  .statistics .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .statistics .stat-item {
+    background-color: var(--navbar-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    /*Adjustwidthfortwocolumns*/
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-bright-red);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+
+  .statistics .toggleItems {
+    margin: 20px auto 0;
+    display: block;
+  }
+  
+  .statistics .icon {
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(to right, var(--color-dark-red), var(--color-bright-red), var(--color-red));
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+  }
+  
+  .statistics .icon img {
+    width: 40px;
+  }
+  
+  .statistics .stat-count {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--color-bright-red);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .primary-btn {
+    background-image: linear-gradient(
+      to right,
+      var(--color-bright-red),
+      var(--color-red)
+    );
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    /* Rounded corners */
+    /* Shadow for depth */
+    transition: box-shadow 0.2s ease-in-out;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .primary-btn:hover {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+    /* Slightly larger shadow on hover */
+    background: linear-gradient(to right, var(--color-red), var(--color-dark-red)); /* Inverted gradient on hover */
+  }
+  
+  /* end statistics */
+  
