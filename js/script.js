@@ -4,7 +4,6 @@ $(document).ready(function () {
     items: 3,
     nav: true,
     loop: true,
-    lazyLoad: true,
     autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
@@ -42,7 +41,6 @@ $(document).ready(function () {
     loop: true,
     center: true, // هذا يجعل العنصر النشط في الوسط
     items: 1,
-    lazyLoad: true,
     autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
