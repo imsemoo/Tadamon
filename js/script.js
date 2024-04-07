@@ -68,4 +68,11 @@ $(document).ready(function () {
       },
     },
   });
+
+
+  $('.page-link').on('click', function(e) {
+    e.preventDefault();
+    var page = $(this).text(); // Or use a data attribute to fetch specific pages
+    // AJAX call to fetch news items for the selected page
+});
 });
