@@ -48,6 +48,11 @@ $(document).ready(function () {
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     rtl: true,
+    navText: [
+      '<i class="fa-solid fa-chevron-right"></i>', // FontAwesome 6 للأمام
+
+      '<i class="fa-solid fa-chevron-left"></i>', // FontAwesome 6 للخلف
+    ],
     responsive: {
       0: {
         items: 1, // On small screens, show 1 item

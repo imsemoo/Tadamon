@@ -603,7 +603,32 @@ p {
   font-size: 20px; /* Default text size */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .owl-header .overlay .text {
+    font-size: 14px;
+  }
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    display: none;
+  }
+  .footer .logo img {
+    margin: 0 auto;
+    display: block;
+  }
 
+  .footer ul.d-flex {
+    justify-content: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+  .footer .links {
+    text-align: center;
+    width: max-content;
+    margin: 20px auto;
+  }
+}
 
 /* Start statistics */
 .statistics {
@@ -639,7 +664,9 @@ p {
   display: flex;
   align-items: center;
   gap: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: white 1px 1px 25px;
+
+  /*box-shadow: 0 2px 4px rgba(182, 182, 182, 0.1);*/
   text-align: center;
   flex-direction: column;
   width: 100%;
@@ -654,7 +681,7 @@ p {
 }
 
 .statistics .toggleItems {
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   display: block;
 }
 
@@ -779,10 +806,12 @@ select {
 .tab-news .nav.nav-pills .nav-item:nth-child(1) .nav-link {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  padding: 15px;
 }
-.tab-news .nav.nav-pills .nav-item:nth-child(3) .nav-link {
+.tab-news .nav.nav-pills .nav-item:nth-child(2) .nav-link {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  padding: 15px;
 }
 .tab-news .nav.nav-pills .nav-link:hover,
 .tab-news .nav.nav-pills .nav-link.active {
@@ -943,6 +972,7 @@ select {
   width: max-content;
   background: var(--navbar-bg-color);
   padding: 20px;
+  box-shadow: whitesmoke 1px 1px 50px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -950,43 +980,8 @@ select {
   -o-border-radius: 8px;
 }
 .header .logo img {
-  width: 200px;
+  width: 250px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .owl-header .overlay .text {
-      font-size: 14px;
-    }
-    .owl-carousel .owl-dots.disabled,
-    .owl-carousel .owl-nav.disabled {
-      display: none;
-    }
-    .footer .logo img {
-      margin: 0 auto;
-      display: block;
-    }
-  
-    .footer ul.d-flex {
-      justify-content: center;
-    }
-    .footer p {
-      text-align: center;
-    }
-    .footer .links {
-      text-align: center;
-      width: max-content;
-      margin: 20px auto;
-    }
-    .statistics .stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-  }
-  
-  
-  }
