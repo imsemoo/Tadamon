@@ -985,3 +985,49 @@ select {
   display: block;
   margin: 0 auto;
 }
+
+.article-image {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.img-fluid {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.video iframe {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.article-text {
+  margin-top: 20px;
+  color: #333;
+}
+.article-title,
+.article-text {
+  line-height: 1.6;
+}
+.article-text p{
+    color: #fff;
+}
+.gallery-container {
+  margin-top: 20px;
+}
+.card {
+  margin-top: 20px;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}

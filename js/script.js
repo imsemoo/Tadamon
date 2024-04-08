@@ -4,12 +4,13 @@ $(document).ready(function () {
     items: 3,
     nav: true,
     loop: true,
+    lazyLoad: false,
     autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     rtl: true, // لدعم RTL
-   
+
     navigation: true,
     navText: [
       '<i class="fa-solid fa-chevron-right"></i>', // FontAwesome 6 للأمام
@@ -41,6 +42,7 @@ $(document).ready(function () {
     loop: true,
     center: true, // هذا يجعل العنصر النشط في الوسط
     items: 1,
+    lazyLoad: false,
     autoplay: true,
     autoplaySpeed: 2000,
     autoplayTimeout: 5000,
